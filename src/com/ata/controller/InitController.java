@@ -44,6 +44,12 @@ public class InitController {
 	/*
 	 * @Autowired DaoImpl<CredentialsBean> cbdao;
 	 */
+	
+	@RequestMapping("/home")
+	public String h()
+	{
+		return"abc";
+	}
 
 	@RequestMapping("/register")
 	public String hello(Model m, ProfileBean profileBean)
